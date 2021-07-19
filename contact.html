@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+input[type=text]:focus {
+    background-color: #ffe6e6;
+}
+
+input[type=button] {
+    width: 20%;
+    background-color:#b30000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color:#4d0000;
+}
+
+form {
+    border-radius: 5px;
+    background-color:#ff9999;
+    padding: 40px;
+}	
+</style>
+<body style="margin:20px;background-color:#ffcccc">
+<header>
+	<div >
+	        <h1 style="text-align:center;">DOGGIES</h1>
+	</div>
+</header>
+<ul style="list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#990000;">
+	<li style="float:left;padding:20px;"><a style="color:white;text-align:center;padding:14px 20px;text-decoration: none;"href="home.html">HOME</a></li>
+	<li style="float:left;padding:20px;"><a style="color:white;text-align:center;padding:14px 20px;text-decoration:none;"href="about.html">ABOUT US</a></li>
+	<li style="float:left;padding:20px;"><a style="color:white;text-align:center;padding:14px 20px;text-decoration:none;"href="contact.html">CONTACT US</a></li>
+</ul>
+<div>You can easily reach us through our contacts:
+<ul>
+	<li>Email : doggies@gmail.com</li>
+	<li>Phone number : +25400000000</li>
+</ul>
+<p>Our lines are open at any time of the day...</p>
+
+</div>
+<div id="form">
+	<form>
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname">
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email">
+		<label for="suggestion">Say something:</label>
+		<input type="text" id="sgestion" name="suggestion">
+		<label for="country">State</label>
+    	<select id="country" name="country">
+	    <option value="kenya">Kenya</option>
+	    <option value="uganda">Uganda</option>
+	    <option value="tz">Tanzania</option>
+	    </select>
+	    <input type="button" value="Submit">
+	</form>
+
+</div>
+</body>
+</html>
