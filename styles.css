@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
 }
 .header {
   min-height: 100vh;
@@ -35,9 +36,16 @@ h1 {
   position: relative;
 }
 .nav-links ul li a {
-  color: #80bfff;
+  color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
+}
+.nav-links ul li a:hover {
+  color: #80bfff;
+  background-color: rgb(102, 17, 11);
+}
+.nav-links ul li a::after {
+  color: #80ecff;
 }
 .text {
   width: 40%;
@@ -45,15 +53,55 @@ h1 {
   position: absolute;
   top: 50%;
   left: 1%;
+  transform: translate(-50%, -50%);
 }
 .text h2 {
   padding-bottom: 20px;
   font-size: 30px;
 }
 .text p {
-  font-size: 13px;
+  font-size: 17px;
   color: #d0e2e6;
 }
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text p {
+    padding-left: 20px;
+  }
+  .text h2 {
+    font-size: 17px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #520b06;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1.5s;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+/*--About---*/
+
 .about {
   padding-left: 25%;
   padding-top: 20px;
@@ -61,14 +109,26 @@ h1 {
   text-align: center;
 }
 .about h2 {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 25px;
+}
+.about-col {
+  flex-basis: 100%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+.about-col img {
+  width: 100%;
+  display: block;
 }
 
 /*---------*/
 
 .breed {
-  width: 90%;
+  width: 95%;
   margin: auto;
   text-align: center;
 }
@@ -79,13 +139,13 @@ h1 {
   padding-bottom: 0;
 }
 .row {
-  margin: 4%;
+  margin: 2%;
   display: flex;
   justify-content: space-between;
 }
 .breed-col {
-  flex-basis: 40%;
-  border-radius: 10px;
+  flex-basis: 45%;
+  border-radius: 8px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
@@ -95,6 +155,22 @@ h1 {
   display: block;
 }
 .reviews {
+  padding: 20px 20px;
   text-align: center;
-  background: linear-gradient(45deg, #800000, #80bfff, #b800e6);
+}
+.reviews h2 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.bottom {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(rgb(7, 6, 0), rgb(90, 57, 6));
+  height: 50vh;
+  width: 100%;
+}
+.bottom p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
