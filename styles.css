@@ -101,24 +101,16 @@ nav .fa {
 }
 
 /*--About---*/
-
 .about {
-  padding-left: 25%;
-  padding-top: 20px;
-  width: 50%;
-  text-align: center;
+  background-color: rgb(99, 69, 23);
+  padding: 30px;
 }
-.about h2 {
-  padding-bottom: 20px;
-  font-size: 25px;
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 .about-col {
-  flex-basis: 100%;
-  border-radius: 8px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
+  flex-basis: 32%;
 }
 .about-col img {
   width: 100%;
@@ -172,5 +164,10 @@ nav .fa {
 .bottom p {
   color: #fff;
   text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
   padding: 20px;
 }
