@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 17px;
 }
 .header {
@@ -15,94 +15,58 @@
 }
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 2% 4%;
   justify-content: space-between;
   align-items: center;
 }
-h1 {
+nav h1 {
   color: #fff;
   width: 150px;
-  padding-left: 50px;
   font-size: 50px;
 }
 .nav-links {
-  flex: 1;
-  text-align: right;
+  padding-left: 40px;
+  width: 10000px;
 }
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 20px 35px 0 35px;
-  position: relative;
+  padding: 10px 15px 0 28px;
 }
 .nav-links ul li a {
   color: #fff;
+  padding: 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 .nav-links ul li a:hover {
   color: #80bfff;
-  background-color: rgb(102, 17, 11);
+  background-color: rgb(201, 120, 15);
 }
 .nav-links ul li a::after {
   color: #80ecff;
 }
 .text {
-  width: 40%;
-  color: #80ecff;
+  width: 450px;
   position: absolute;
-  top: 50%;
-  left: 1%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 10%;
 }
 .text h2 {
-  padding-bottom: 20px;
-  font-size: 30px;
+  color: #fff;
+  padding-bottom: 15px;
+  font-size: 40px;
 }
 .text p {
-  font-size: 17px;
+  font-size: 23px;
   color: #d0e2e6;
 }
 nav .fa {
   display: none;
 }
 
-@media (max-width: 700px) {
-  .text p {
-    padding-left: 20px;
-  }
-  .text h2 {
-    font-size: 17px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: fixed;
-    background: #520b06;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1.5s;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-}
-
 /*--About---*/
 .about {
-  background-color: rgb(99, 69, 23);
   padding: 30px;
 }
 .row {
